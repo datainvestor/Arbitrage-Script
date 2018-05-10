@@ -76,4 +76,4 @@ p = PushBullet(apiKey)
 devices = p.getDevices()
 devices
 
-p.pushNote(devices[0]["iden"], 'Buy at bitmarket/sell at gdax: ', string1)
+p.pushNote(devices[0]["iden"], 'Buy at bitmarket/sell at gdax: ' + string1, "")
