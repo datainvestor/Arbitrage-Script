@@ -1,7 +1,9 @@
 import urllib.request, json 
 from pushbullet.pushbullet import PushBullet
 import datetime
+from api import API_KEY
 
+#check every other hour
 now = datetime.datetime.now()
 
 if now.hour % 2 == 0:
@@ -73,8 +75,9 @@ if now.hour % 2 == 0:
 
     string1=str(arbitrage)
 
-
-    apiKey = "o.nYrBuXGCAfYrQmvNCn2yahywKHw5s0c3"
+    #get api key from env
+    
+    apiKey = API_KEY
     p = PushBullet(apiKey)
     # Get a list of devices
     devices = p.getDevices()
