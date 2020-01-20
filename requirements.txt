@@ -1,2 +1,2 @@
 git+https://github.com/Azelphur/pyPushBullet.git
-urllib3==1.22
+urllib3==1.24.2
